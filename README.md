@@ -1,4 +1,4 @@
-# Mimic COR // HTML Webpage
+# COR HTML // HTML Webpage
 // === 11/27/2023 === //
 
 Author: yey-code
