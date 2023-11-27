@@ -1,4 +1,4 @@
-# BSIT-Curriculum_De-Vera-Arvin_2-2
+# Mimic COR // HTML Webpage
 // === 11/27/2023 === //
 
 Author: yey-code
