@@ -1,0 +1,413 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Certificate of Registration</title>
+
+    <style>
+        /* main div */
+        #main{
+            margin: 5px;
+        }
+
+        /* title, box, and qr code */
+        #upper{
+            padding-bottom: 5px;
+        }
+
+        /* Logo and text beside it */
+        #title{
+            position: absolute;
+            font-family: Calibri, sans-serif; 
+            padding-top: 10px;
+            padding-left: 15px;
+            font-size: 15px;
+        }
+
+        /* PUP Logo */
+        #logo{
+            position: absolute;
+            float: left;
+            top: 30px;
+        }
+
+        /* Republic of the Philippines */
+        #text1{
+            font-family: Calibri, sans-serif;
+            padding-top: 15px;
+            padding-left: 80px;
+        } 
+
+        /* POLYTECHNIC UNIVERSITY OF THE PHILIPPINES */
+        #text2{
+            font-family: Calibri, sans-serif;
+            position: relative;
+            top: -20px;
+            left: 80px;
+        }
+
+        /* Certificate of Registration */
+        #box{
+            position: absolute;
+            left: 45%;
+            right: 75%;
+            top: 50px;
+            width: 2.76in;
+            height: 0.4in;
+            border: 1px solid #000000;
+            text-align: center;
+            line-height: 4px;
+            font-family: Calibri, sans-serif; 
+        }
+
+        /* QR Code */
+        #qr{
+            position: absolute;
+            top: 30px;
+            right: 65px;
+        }
+
+        /* Name & details w/ first table */
+        #upperMiddle{
+            position: relative;
+            top: 110px;
+            left: 15px;
+            font-family: Calibri, sans-serif; 
+            font-weight: 900;
+            line-height: 0px;
+        }
+
+        /* Academic Year text */
+        #acadYear{
+            position: absolute;
+            float: right;
+            top: -4px;
+            right: 30.5rem;
+        }
+
+        /* Term text */
+        #term{
+            position: absolute;
+            float: right;
+            top: -4px;
+            right: 80px;
+        }
+
+        /* container for table1 */
+        #detailsTable{
+            position: absolute;
+            top: 175px;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 95%;
+        }
+        
+        /* Details Table (box) */
+        .table1{
+            border:1px solid #000000;
+            border-collapse: collapse;
+            width: 100%;
+            font-family: Calibri, sans-serif;
+        }
+
+        /* Details Table (contents) */
+        .table1 th {
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        /* container for table2 and table3 */
+        #subj_feeTable{
+            position: absolute;
+            top: 270px;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 95.05%;
+        }
+
+        /* Fees Table */
+        #table2{
+            position: relative;
+            float: right;
+            border:1px solid #000000;
+            width: 20%;
+            font-family: Calibri, sans-serif;
+            border-collapse: collapse;
+        }
+
+        #table2 th {
+            text-align: center;
+            font-size: 10px;
+            padding: 21px;
+            border: 1px solid black;
+        }
+
+        /* Subject Info Table */
+        #table3{
+            border:1px solid #000000;
+            width: 80%;
+            font-family: Calibri, sans-serif;
+            border-collapse: collapse;
+        }
+
+        #table3 th {
+            text-align: center;
+            font-size: 10px;
+            padding: 15px;
+            border: 1px solid black;
+        }
+
+        /* container for table4 */
+        #totalTable{
+            position: absolute;
+            top: 606.5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 95.05%;
+        }
+
+        /* Units and Total Assessment Table */
+        #table4{
+            position: relative;
+            border:1px solid #000000;
+            font-family: Calibri, sans-serif;
+            border-collapse: collapse;
+        }
+
+        #table4 th{
+            font-size: 12px;
+            padding: 5px;
+            table-layout: fixed;
+            border: 1px solid black;
+        }
+
+        /* container for table5 */
+        #lowerTable{
+            position: absolute;
+            top: 633px;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 95.05%;
+        }
+
+        /* Registrar's Note Table */
+        #table5{
+            position: relative;
+            border:1px solid #000000;
+            font-family: Calibri, sans-serif;
+            border-collapse: collapse;
+        }
+
+        #table5 td{
+            padding: 5px;
+            font-size: 12px;
+        }
+
+        table{
+            padding: 10px;
+            width: 100%;
+        }
+
+        th{
+            text-align: left;
+        }
+
+        td{
+            font-size: 12px;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body style="overflow: hidden;">
+    
+    <div id="main">
+        <!-- upper part of COR -->
+        <div id="upper">
+            <div id="title">
+                <img id="logo" src=".//logo.png" height="70px" width="70px">
+                <h4 id="text1">Republic of the Philippines</h4>
+                <h4 id="text2">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</h4>
+            </div>
+    
+            <div id="box">
+                <h3>CERTIFICATE OF REGISTRATION</h3>
+            </div>
+
+            <img id="qr" src=".//qr_code.png" height="100px" width="100px">
+        </div>
+
+        <!-- middle part of COR -->
+        <div id="upperMiddle">
+            <p>DE VERA, ARVIN TEODORO</p>
+            <p>2022-00058-SM-0</p>
+            <p id="acadYear">A.Y.:	2023-2024</p>
+            <p id="term">TERM: First Semester</p>
+        </div>
+
+        <!-- student's details -->
+        <div id="detailsTable">
+            <table class="table1">
+                <tr>
+                    <th style="width: 80%;">PROGRAM DESCRIPTION: BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY (STA. MARIA)</th>
+                    <th colspan="2">PROGRAM CODE: BSIT-SM</th>
+                </tr>
+            </table>
+
+            <table class="table1">
+                <tr>
+                    <th style="width: 33%;">Campus: Sta Maria</th>
+                    <th style="width: 33%;">YEAR LEVEL: Second Year</th>
+                    <th style="width: 33%;">SECTION: 2</th>
+                </tr>
+            </table>
+            
+            <table class="table1">
+                <tr>
+                    <th style="width: 80%;">ADDRESS: 1235 Purok 4, Tibagan, Brgy. Cay Pombo, SANTA MARIA, Philippines (the)</th>
+                    <th colspan="2">CONTACT NO: 09503766373</th>
+                </tr>
+            </table>
+        </div>
+
+        <!-- subject info and fees info -->
+        <div id="subj_feeTable">
+            <table id="table2">
+                <tr>
+                    <th style="width: 50%;">BREAKDOWN OF FEES</th>
+                    <th>AMOUNT</th>
+                </tr>
+
+                <tr>
+                    <td>Not Applicable</td>
+                    <td>Php 0.00</td>    
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="text-align: center; padding-bottom: 248px;">x - x - x - x - x Nothing Follows x - x - x - x - x</td> 
+                </tr>
+            </table>
+
+            <table id="table3">
+                <tr>
+                    <th style="width: 7%;">SUBJECT CODE</th>
+                    <th>SUBJECT TITLE</th>
+                    <th>SECTION CODE</th>
+                    <th style="width: 7%;">TUITION UNITS</th>
+                    <th style="width: 7%;">CREDITED UNITS </th>
+                    <th>SCHEDULE</th>
+                </tr>
+
+                <tr>
+                    <td>COMP 006</td>
+                    <td>Data Structures and Algorithms</td>
+                    <td>BSIT-SM 2-2</td>
+                    <td>5.0</td>
+                    <td>3.0</td>
+                    <td>S 09:30:00-11:30:00 LEC<br>
+                        T 12:30:00-15:30:00 LEC</td>
+                </tr>
+
+                <tr>
+                    <td>COMP 007</td>
+                    <td>Operating Systems</td>
+                    <td>BSIT-SM 2-2</td>
+                    <td>5.0</td>
+                    <td>3.0</td>
+                    <td>TH 13:00:00-15:00:00 LEC<br>
+                        TH 15:00:00-18:00:00 LEC</td>
+                </tr>
+
+                <tr>
+                    <td>COMP 008</td>
+                    <td>Data Communications and Networking</td>
+                    <td>BSIT-SM 2-2</td>
+                    <td>5.0</td>
+                    <td>3.0</td>
+                    <td>F 13:30:00-15:30:00 LEC<br>
+                        F 15:30:00-18:30:00 LEC</td>
+                </tr>
+
+                <tr>
+                    <td>ELEC IT-FE1</td>
+                    <td>BSIT Free Elective 1</td>
+                    <td>BSIT-SM 2-2</td>
+                    <td>3.0</td>
+                    <td>3.0</td>
+                    <td>T 07:30:00-10:30:00 LEC</td>
+                </tr>
+
+                <tr>
+                    <td>GEED 001 </td>
+                    <td>Understanding the Self/Pag-unawa sa Sarili</td>
+                    <td>BSIT-SM 2-2</td>
+                    <td>3.0</td>
+                    <td>3.0</td>
+                    <td>S 17:00:00-20:00:00 LEC</td>
+                </tr>
+
+                <tr>
+                    <td>GEED 028</td>
+                    <td>Reading Visual Arts</td>
+                    <td>BSIT-SM 2-2</td>
+                    <td>3.0</td>
+                    <td>3.0</td>
+                    <td>T 17:00:00-20:00:00 LEC</td>
+                </tr>
+
+                <tr>
+                    <td>INTE 201 </td>
+                    <td>Programming 3 (Structured Programming)</td>
+                    <td>BSIT-SM 2-2</td>
+                    <td>5.0</td>
+                    <td>3.0</td>
+                    <td>S 14:00:00-16:00:00 LEC<br>
+                        W/TH 19:30:00-21:00:00 LEC</td>
+                </tr>
+
+                <tr>
+                    <td>PATHFIT 3 </td>
+                    <td>Physical Activity Towards Health and Fitness 3</td>
+                    <td>BSIT-SM 2-2</td>
+                    <td>2.0</td>
+                    <td>2.0</td>
+                    <td>S 07:30:00-09:30:00 LEC</td>
+                </tr>
+
+                <tr>
+                    <td colspan="6" style="text-align: center; padding-bottom: 75.5px;">x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x Nothing Follows x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- totals -->
+        <div id="totalTable">
+            <table id="table4">
+                <tr>
+                    <th style="width: 30%;">MAX UNITS ALLOWED: </th>
+                    <th>23.0</th>
+                    <th style="width: 10%;">TOTAL UNITS ENROLLED:</th>
+                    <th>31.0</th>
+                    <th>23.0</th>
+                    <th style="width: 26.44%;"></th>
+                    <th>TOTAL ASSESSMENT:</th>
+                    <th>FREE</th>
+                </tr>
+            </table>
+        </div>
+
+        <div id="lowerTable">
+            <table id="table5">
+                <tr>
+                    <td style="width: 76%;">REGISTRAR:</td>
+                    <td>This is system-generated, signature is not required.</td>
+                </tr>
+            </table>
+        </div>
+
+        <p style="font-family: Calibri, sans-serif; font-size: 12px; font-weight: 900; color: rgb(169,16,14); position: relative; top: 603px; text-align: center;">This document contains personal-identifiable information that is subject to Data Privacy.<br>
+            Please keep this document protected and in a safe place.</p>
+    </div>
+</body>
+</html>
